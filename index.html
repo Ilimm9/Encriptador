@@ -13,17 +13,16 @@
     <main class="contenido">
         <div>
             <h2>Ingrese el texto aqui</h2>
-            <textarea id="mensaje" rows="10" cols="50">Write something here</textarea>
+            <textarea id="mensaje" placeholder="Ingresa el texto" rows="10" cols="50"></textarea>
 
-            <!-- <input type="text"> -->
-            <!-- <textarea name="texto" id=""></textarea> -->
              <div class="botones">
-                <button >Encriptar </button>
-                <button >Desencriptar</button>
+                <button onclick="BtnEncriptar();">Encriptar </button>
+                <button onclick="BtnDesencriptar()">Desencriptar</button>
              </div>
         </div>
         <div>
             <h2>Texto encriptado</h2>
+            <textarea id="resultado"></textarea>
             <div  class="botones">
                 <button>Copiar</button>
             </div>
