@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main class="presentacion">
+    <header>
         <h1>Encriptador</h1>
+    </header>
+    <main class="contenido">
         <div>
             <h2>Ingrese el texto aqui</h2>
-            <input type="text">
+            <textarea id="mensaje" rows="10" cols="50">Write something here</textarea>
+
+            <!-- <input type="text"> -->
             <!-- <textarea name="texto" id=""></textarea> -->
+             <div class="botones">
+                <button >Encriptar </button>
+                <button >Desencriptar</button>
+             </div>
         </div>
         <div>
             <h2>Texto encriptado</h2>
+            <div  class="botones">
+                <button>Copiar</button>
+            </div>
         </div>
     </main>
     <footer>
-        <p>Desarrollado por Ilian Matínez</p>
-        <a href="">Instagram</a>
-        <a href="">GitHub</a>
-        <a href="">Linkedin</a>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
