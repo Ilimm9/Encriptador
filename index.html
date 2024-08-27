@@ -13,8 +13,8 @@
     <main class="contenido">
         <div>
             <h2>Ingrese el texto aqui</h2>
-            <textarea id="mensaje" placeholder="Ingresa el texto" rows="10" cols="50"></textarea>
-
+            <textarea id="mensaje" placeholder="Ingresa el texto" rows="20" cols="80"></textarea>
+            <p>Solo letras minúsculas y sin acentos</p>
              <div class="botones">
                 <button onclick="BtnEncriptar();">Encriptar </button>
                 <button onclick="BtnDesencriptar()">Desencriptar</button>
@@ -22,14 +22,27 @@
         </div>
         <div>
             <h2>Texto encriptado</h2>
-            <textarea id="resultado"></textarea>
+            <textarea id="resultado" rows="20" cols="50"></textarea>
             <div  class="botones">
-                <button>Copiar</button>
+                <button onclick="BtnCopiar()">Copiar</button>
             </div>
         </div>
     </main>
-    <footer>
-    </footer>
+    <footer class="seccion-oscura "> 
+        <h2>Accede a mis redes</h2>
+        <div class="presentacion__enlaces__link">
+            <a href="https://github.com/Ilimm9">
+                <img src="./assets/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ilimorales">
+                <img src="./assets/linkedin.png">
+            </a>
+            <a href="https://www.instagram.com/ilim_m3/">
+                <img src="./assets/instagram.png">
+            </a>
+        </div>
+        <div class="autor">Creado por Ilian Martínez (2024) &#169;</div>
+      </footer>
     <script src="app.js"></script>
 </body>
 

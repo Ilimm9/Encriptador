@@ -31,3 +31,25 @@
     justify-content: center;
     align-items: center;
 }
+
+.seccion-oscura {
+    color: white;
+    background-color: #433568;
+}
+
+.presentacion__enlaces__link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+}
+
+.botones:hover{
+    background-color: gray;
+}
+
+.autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }

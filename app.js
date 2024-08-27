@@ -1,6 +1,6 @@
 // funciones para obtener y devolver texto
-function ObtenerTxt (){
-     const texto = document.getElementById('mensaje').value;
+function ObtenerTxt (id){
+     const texto = document.getElementById(id).value;
     return texto ? texto : "";  // Asegurar que devuelva una cadena vacía si es indefinido o nulo
  }
 
@@ -8,7 +8,7 @@ function ObtenerTxt (){
  //vincular con los campos de texto del html
 
  function BtnEncriptar() {
-    const texto = ObtenerTxt();
+    const texto = ObtenerTxt('mensaje');
     if (texto) {
         let textoEncriptado = texto.replaceAll(/a|e|i|o|u/g, function(match) {
             switch (match) {
@@ -26,7 +26,7 @@ function ObtenerTxt (){
 }
 
 function BtnDesencriptar() {
-    const texto = ObtenerTxt(); 
+    const texto = ObtenerTxt('mensaje'); 
     if (texto) { let textoDescifrado = texto.replaceAll(/ai|enter|imes|ober|ufat/g, function(match) {
         switch (match) {
             case 'ai': return 'a';
@@ -40,3 +40,24 @@ function BtnDesencriptar() {
         alert("Por favor ingrese un texto para desencriptar.");
     }
 }
+
+// mensaje de validacion
+// function asignarTextoElemento(elemento, texto) {
+//     let elementoHTML = document.querySelector(elemento);
+//     elementoHTML.innerHTML = texto;
+//     return;
+// }
+
+
+
+// boton de copiar, seleccionar todo lo del textarea
+function BtnCopiar(){
+ObtenerTxt('resultado');
+navigator.clipboard.writeText(texto)
+.then(() => {
+            alert("Texto copiado al portapapeles");
+   })
+ .catch(err => {
+   console.error('Error al copiar el texto: ', err);
+    });
+ }
