@@ -18,6 +18,8 @@ function ObtenerTxt (id){
                 case 'o': return 'ober';
                 case 'u': return 'ufat';
             }
+            document.getElementById('imagen-container').style.display = 'none';
+
       });
         return document.getElementById('resultado').value = textoEncriptado;
     } else {
@@ -35,11 +37,13 @@ function BtnDesencriptar() {
             case 'ober': return 'o';
             case 'ufat': return 'u';
         }
+    
   }); return document.getElementById('resultado').value = textoDescifrado;
     } else {
         alert("Por favor ingrese un texto para desencriptar.");
     }
 }
+
 
 // mensaje de validacion
 // function asignarTextoElemento(elemento, texto) {

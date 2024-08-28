@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,28 +6,42 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body style="background-color: #F3F5FD;">
+    <header class="titulo">
         <h1>Encriptador</h1>
     </header>
     <main class="contenido">
-        <div>
-            <h2>Ingrese el texto aqui</h2>
-            <textarea id="mensaje" placeholder="Ingresa el texto" rows="20" cols="80"></textarea>
-            <p>Solo letras minúsculas y sin acentos</p>
-             <div class="botones">
-                <button onclick="BtnEncriptar();">Encriptar </button>
-                <button onclick="BtnDesencriptar()">Desencriptar</button>
+        <div class="contenido_derecho">
+            <textarea id="mensaje" placeholder="Ingresa el texto" rows="20" cols="80" "></textarea>
+            <p class="letritas">Solo letras minúsculas y sin acentos</p>
+             <div class="contenedor_botones">
+                <button class="boton" onclick="BtnEncriptar();">Encriptar </button>
+                <button class="boton" onclick="BtnDesencriptar()">Desencriptar</button>
              </div>
         </div>
+        <!-- <div class="contenido_izquierdo">
+                <img class="contenido_img" src="assets/image.png" alt="buscando">
+                <p>Ningun mensaje fue encontrado</p>
+                <p>Ingrese el texto que desea encriptar o desencriptar</p>
+        </div> -->
         <div>
+        <div class="contenido_izquierdo">
             <h2>Texto encriptado</h2>
-            <textarea id="resultado" rows="20" cols="50"></textarea>
-            <div  class="botones">
-                <button onclick="BtnCopiar()">Copiar</button>
+            <textarea id="resultado" rows="20" cols="50"></textarea> 
+            <div  class="contenedor_botones">
+                <button class="boton" onclick="BtnCopiar()">Copiar</button>
             </div>
         </div>
+        <!-- <div id="resultado-container" style="display: none;">
+            <h2>Texto encriptado</h2>
+            <textarea id="resultado" rows="20" cols="50"></textarea> 
+            <div class="contenedor_botones">
+                <button class="boton" onclick="BtnCopiar()">Copiar</button>
+            </div> -->
+        </div>
+    </div>
     </main>
+
     <footer class="seccion-oscura "> 
         <h2>Accede a mis redes</h2>
         <div class="presentacion__enlaces__link">
@@ -41,7 +55,7 @@
                 <img src="./assets/instagram.png">
             </a>
         </div>
-        <div class="autor">Creado por Ilian Martínez (2024) &#169;</div>
+        <div class="letritas">Creado por Ilian Martínez (2024) &#169;</div>
       </footer>
     <script src="app.js"></script>
 </body>
